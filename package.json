@@ -1,0 +1,35 @@
+{
+  "name": "@liu-taro/hooks",
+  "version": "0.0.1",
+  "description": "",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "keywords": [],
+  "authors": [
+    "895898088@qq.com"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "@liu-taro/utils": "*"
+  },
+  "devDependencies": {
+    "@liu-taro/utils": "^0.0.6",
+    "@types/react": "^19.1.8",
+    "father": "^4.5.6",
+    "react": "^19.1.0"
+  }
+}
