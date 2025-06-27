@@ -1,6 +1,6 @@
 {
   "name": "@liu-taro/hooks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -23,13 +23,16 @@
     "access": "public"
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "@liu-taro/utils": "*"
+    "@liu-taro/utils": "*",
+    "react": ">=16.8.0"
   },
   "devDependencies": {
     "@liu-taro/utils": "^0.0.6",
     "@types/react": "^19.1.8",
     "father": "^4.5.6",
     "react": "^19.1.0"
+  },
+  "dependencies": {
+    "ahooks": "^3.8.5"
   }
 }
