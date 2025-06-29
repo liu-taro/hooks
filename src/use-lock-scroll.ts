@@ -1,6 +1,6 @@
 import {useTouch} from './use-touch'
 import {type RefObject, useEffect} from 'react'
-import {getScrollParent, supportsPassive} from '@liu-taro/utils';
+import {getScrollParent, supportsPassive,canUseDom} from '@liu-taro/utils';
 
 let totalLockCount = 0
 
@@ -100,7 +100,7 @@ export function useLockScroll(
     }
 
     useEffect(() => {
-        if (shouldLock) {
+        if (shouldLock && canUseDom) {
             lock()
             return () => {
                 unlock()
